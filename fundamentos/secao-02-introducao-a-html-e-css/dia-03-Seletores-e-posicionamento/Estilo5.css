@@ -1,0 +1,21 @@
+
+ol li {
+    background-color: yellow;
+}
+
+li:nth-child(even) {
+    color: green
+}
+
+li:nth-child(odd) {
+    text-transform: capitalize;
+}
+
+.HEADER {
+     color: red;
+}
+
+.HEADERITALICO {
+    font-weight: 40px;
+    border: 1px solid black;
+}
