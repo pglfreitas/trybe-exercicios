@@ -10,6 +10,6 @@ li:hover {
 li:active {
     font-family: sans-serif;
 }
-ul, ol {
-    list-style: :none;
+li {
+    list-style:  none;
 }
