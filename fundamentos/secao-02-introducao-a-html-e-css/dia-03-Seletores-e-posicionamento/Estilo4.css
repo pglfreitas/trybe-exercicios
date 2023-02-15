@@ -4,21 +4,50 @@ div:hover {
 }
 
 div:nth-of-type(1) {
-    color: green;
+    background-color: green;
 }
 
 div:nth-of-type(2) {
-    color: brown;
+    background-color: brown;
 }
 
 div:nth-of-type(3) {
-    color: bisque;
+    background-color: bisque;
 }
 
 div:nth-of-type(4) {
-    color: black;
+    background-color: black;
 }
 
 div:nth-of-type(5) {
-    color: aquamarine;
+    background-color: aquamarine;
+}
+
+div:nth-of-type(1) > h3 {
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+div:nth-of-type(2) > h3 {
+    font-style: italic;
+}
+
+div:nth-of-type(3) > h3 {
+    font-style: italic;
+}
+
+div:nth-of-type(4) > h3 {
+    font-style: italic
+}
+
+div:nth-of-type(5) > h3 {
+    font-style: italic
+}
+
+div:nth-last-of-type(3) {
+    height: 50px;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic;
 }
