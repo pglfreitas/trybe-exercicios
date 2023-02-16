@@ -1,6 +1,7 @@
 
 ul {
     list-style: none;
+    text-align: center;
   }
 
 h1 {
@@ -36,6 +37,13 @@ h1 {
   }
 
   h3 {
-    display: inline;
+    text-align: center;
+    display: block;
   }
+
+  li {
+    display: inline-block;
+    text-align: center;
+  }
+
   
