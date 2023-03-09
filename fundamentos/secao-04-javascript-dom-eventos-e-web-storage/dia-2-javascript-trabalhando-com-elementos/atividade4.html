@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const elementoH1 = document.createElement("h1")
+      elementoH1.innerText = "TrybeTrip - Agência de Viagens"
+      document.body.appendChild(elementoH1)
+      
+      const elementoMain = document.createElement("main")
+      elementoMain.className = "main-content"
+      document.body.appendChild(elementoMain)
+      
+      const elementoSection = document.createElement("section")
+      elementoSection.className = "center-content"
+      elementoMain.appendChild(elementoSection)
+       
+      const elementoP = document.createElement("p")
+      elementoP.innerText = "Algum texto"
+      elementoSection.appendChild(elementoP)
+
+      const elementoSectionLeft = document.createElement("section")
+      elementoSectionLeft.className = "left-content"
+      elementoMain.appendChild(elementoSectionLeft)
+
+      const elementoSectionRight = document.createElement("section")
+      elementoSectionRight.className = "right-content"
+      elementoMain.appendChild(elementoSectionRight)
+
+      const elementoImagem = document.createElement("img")
+      elementoImagem.className = "small-image"
+      elementoImagem.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_0QKeU-lcY_2aaaGCcwcW4OZtcYPuX2EP8H-bL-Lx2yaebKu61xddt1dEi2kjx0Cu75c&usqp=CAU"
+      elementoSectionLeft.appendChild(elementoImagem)
+
+      const elementoListaUl = document.createElement("ul")
+      elementoSectionRight.appendChild(elementoListaUl)
+      const arrayDeNumeros = ["Um", "Dois" , "Três", "Quatro", "Cinco", "Seis", "Sete", "oito", "Nove", "Dez"]
+      for (let numero in arrayDeNumeros) {
+        const elementoListaLi = document.createElement("li")
+        elementoListaLi.innerText = arrayDeNumeros[numero]
+        elementoListaUl.appendChild(elementoListaLi)
+      }
+
+      for (let index = 1; index <= 3; index += 1) {
+        const elementOsH3 = document.createElement("h3")
+        elementOsH3.innerHTML = index
+        elementoMain.appendChild(elementOsH3)
+      }
+
+      const alteraçãoClassH1 = document.querySelector("h1")
+      title.className = "tittle"
+
+      const alteraçãoClassH3 = document.getElementById("h3")
+      for (let index = 0; index < 3; index += 1) {
+        elementOsH3[index].className = "description"
+      }
+
+      const removerSectionLeft = document.getElementsByClassName("left-content")[0]
+      elementoMain.removeChild(removerSectionLeft)
+
+      const centralizarSectionRight = document.getElementsByClassName("right-content")[0]
+      sectionRightContent.style.marginRight="auto"
+
+      const alterarCorElementoPai = document.getElementsByClassName("center-content")[0]
+      alterarCorElementoPai.parentNode.style.backgroundColor = "green"
+
+      const ul = document.getElementsByTagName("ul")[0]
+      ul.lastChild.remove()
+      ul.lastChild.remove()
+    </script>
+  </body>
+</html>
