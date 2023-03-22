@@ -14,6 +14,7 @@ html {
 
 	h1 {
 		font-size: 20px;
+		text-align: center;
 	}
 
 	h2 {
@@ -23,17 +24,19 @@ html {
 	.titulo {
 		font-size: 20px;
 		font-weight: bold;
+		text-align: center;
 	}
   }
 
-  @media screen and (min-width: 820px) {
+  @media screen and (min-width: 620px) {
 	body {
 		margin: 80px;
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	h1 {
 		font-size: 35px;
+		text-align: center;
 	}
 
 	h2 {
@@ -43,7 +46,32 @@ html {
 	.titulo {
 		font-size: 45px;
 		font-weight: bold;
+		text-align: center;
 	}
 
   }
+
+  @media screen and (min-width: 992px) {
+	body {
+		margin: 60px;
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	.titulo {
+		font-size: 55px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+  }
+
 
