@@ -25,3 +25,25 @@ html {
 		font-weight: bold;
 	}
   }
+
+  @media screen and (min-width: 820px) {
+	body {
+		margin: 80px;
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 35px;
+	}
+
+	.titulo {
+		font-size: 45px;
+		font-weight: bold;
+	}
+
+  }
+
