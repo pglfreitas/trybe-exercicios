@@ -1,0 +1,27 @@
+html {
+	box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+  @media screen and (min-width: 375px) {
+	body {
+		margin: 40px;
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	.titulo {
+		font-size: 20px;
+		font-weight: bold;
+	}
+  }
