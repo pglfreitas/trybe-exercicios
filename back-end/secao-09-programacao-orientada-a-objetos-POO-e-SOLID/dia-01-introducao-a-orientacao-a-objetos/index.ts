@@ -1,6 +1,6 @@
-import Client from './Client';
-import Order from './Order';
-import OrderItem from './OrderItem';
+import Client from './client';
+import Order from './order';
+import OrderItem from './orderItem';
 
 const client = new Client('João');
 
